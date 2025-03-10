@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="assets/epic_main.css" rel="stylesheet" type="text/css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning Content!</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/kray_favi.ico">
+</head>
+<body>
+    <div id="wap-container">
+        <h1>⚠️ Khoan đã! ⚠️</h1>
+        <div id="infobox2"><h2>Bộ truyện bạn sắp đọc sẽ có nội dung 18+ (không phải pỏn nhưng...)<br>Có thể sẽ không phù hợp với một số đọc giả, Cân nhắc trước khi xem!<br></h2>
+            <button onclick=jump()>Start Reading</button></div>
+    </div>
+</body>
+<script>
+    function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            url: params.get('url'),
+        };
+    }
+
+    function jump() {
+        if (getQueryParams().url == null) {
+            window.location.href = "/"
+        } else {
+            window.location.href = getQueryParams().url
+        }
+    }
+</script>
+</html>

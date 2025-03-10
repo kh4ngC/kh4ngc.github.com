@@ -1,0 +1,92 @@
+@font-face{
+    font-family: "Comic Sans MS";
+    src: url("../assets/fonts/SVN-Comic\ Sans\ MS.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Mali Regular";
+    src: url("../assets/fonts/Mali-Regular.ttf") format("truetype");
+}
+
+body {
+    background-image: image-set('../assets/images/kray_BG.png');
+
+    font-family: "Mali Regular", cursive;
+    font-weight: bold;
+    font-size: 16px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    background-color: #72c2f7;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#wap-container {
+    background-color: #72c2f7;
+    background-origin: padding-box;
+    display: block;
+    height: auto;
+    width: 650px;
+    padding: 50px;
+    padding-top: 20px;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 8px #000000;
+}
+
+#banner {
+    background-image: image-set('../assets/images/kray_ban.png');
+    background-size:650px;
+    background-color: rgb(0, 0, 0);
+    background-origin: padding-box;
+    height: 250px;
+    width: 650px;
+    border-radius: 15px;
+    margin: auto;
+    
+    margin-bottom: 100px;
+}
+
+#infobox {
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-align: left;
+    border-top-left-radius: 0;
+    color: #000000;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin-bottom: 25px;
+}
+
+#infobox2 {
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    color: #000000;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+#volbox {
+    text-align: center;
+}
+
+button {
+    outline: #ffffff;
+    font-family: "Mali Regular", cursive;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #72c2f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #09639e;
+}
