@@ -1,0 +1,142 @@
+@font-face{
+    font-family: "Comic Sans MS";
+    src: url("../assets/fonts/SVN-Comic\ Sans\ MS.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"Mali Regular";
+    src: url("../assets/fonts/Mali-Regular.ttf") format("truetype");
+}
+body {
+    font-family: "Mali Regular", cursive;
+    font-weight: bold;
+    font-size: 15px;
+    color:rgb(33, 37, 41);
+    text-align: center;
+    background-color: rgb(255, 0, 170);
+    background-image: image-set("../assets/images/BG_2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#comic-image {
+    max-width: 95%;
+    height: auto;
+    margin-top: 25px;
+    padding-bottom: 12px;
+}
+.navigation {
+    margin-top: 20px;
+}
+button {
+    font-family: "Mali Regular", cursive;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(255, 0, 170);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 1px;
+}
+button:hover {
+    background-color: rgb(255, 61, 191);
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+#wap-container {
+    background-color: rgb(255, 255, 255);
+    background-origin: padding-box;
+    display: block;
+    height: auto;
+    width: 650px;
+    padding: 50px;
+    padding-top: 20px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+#pink {
+    background-color: rgb(255, 204, 221);
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+#logodiv {
+    margin-bottom: 20px; display:block; width:500px; margin-left: auto; margin-right: auto
+}
+
+#logo {
+    width: 20%;
+    margin-bottom: 20px;
+    transition: transform .2s
+}
+#logo:hover {
+    transform: scale(1.2);
+}
+
+#scbanner {
+    border-radius: 15px; margin-left:-15px; padding-bottom:10px; padding-top:5px
+}
+
+@media only screen and (max-width:600px) {
+    
+    body {
+        font-size: 15px;
+    }
+
+    #wap-container {
+        width: 320px;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    #pink {
+        margin-left: -5px;
+    }
+
+    #banner {
+        width: 320px;
+        height: 150px;
+        background-size: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin-bottom: 100px;
+    }
+
+    #avatar {
+        width: 130px; border-radius: 15px; margin-top:105px;outline: 7px solid #72c2f7
+    }
+
+    #infobox {
+        font-size: 10px;
+        padding-right: 10px;
+    }
+
+    #comic-image {
+        max-width: 95%;
+        height: auto;
+        margin-top: 25px;
+        padding-bottom: 12px;
+    }
+
+    #logo {
+        width: 65%;
+        margin-bottom: 10px;
+    }
+
+    #scbanner {
+        width: 290px;
+        margin-left: -15px;
+    }
+
+    button {
+        font-size: 13.3px;
+        margin-left: -5px;
+    }
+}

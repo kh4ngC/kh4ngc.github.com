@@ -50,6 +50,10 @@ body {
     margin-bottom: 100px;
 }
 
+#avatar {
+    width: 150px; border-radius: 15px; margin-top:185px;outline: 7px solid #72c2f7;
+}
+
 #infobox {
     background-color: #ffffff;
     border-radius: 30px;
@@ -86,7 +90,49 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
+    margin-right: 5px;
 }
 button:hover {
     background-color: #09639e;
+}
+
+@media only screen and (max-width:600px) {
+    
+    body {
+        font-size: 15px;
+    }
+
+    #wap-container {
+        width: 320px;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    #banner {
+        width: 320px;
+        height: 150px;
+        background-size: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin-bottom: 100px;
+    }
+
+    #avatar {
+        width: 130px; border-radius: 15px; margin-top:105px;outline: 7px solid #72c2f7
+    }
+
+    #infobox {
+        font-size: 10px;
+        padding-right: 10px;
+    }
+
+    #logo {
+        height: 100%;
+    }
+
+    #pagevolume {
+        width: 100%;
+    }
+
 }

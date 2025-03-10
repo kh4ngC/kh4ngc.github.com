@@ -3,104 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sparklecare - Comic</title>
-    <style>
-        @font-face{
-            font-family: "Comic Sans MS";
-            src: url("assets/fonts/SVN-Comic\ Sans\ MS.ttf") format("truetype");
-        }
-
-        @font-face {
-            font-family:"Mali Regular";
-            src: url("assets/fonts/Mali-Regular.ttf") format("truetype");
-        }
-        body {
-            font-family: "Mali Regular", cursive;
-            font-weight: bold;
-            font-size: 16px;
-            color:rgb(33, 37, 41);
-            text-align: center;
-            background-color: rgb(70, 144, 255);
-            background-image: image-set("assets/images/BG_2.png");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        #comic-image {
-            max-width: 95%;
-            height: auto;
-            margin-top: 25px;
-            padding-bottom: 12px;
-        }
-        .navigation {
-            margin-top: 20px;
-        }
-        button {
-            font-family: "Mali Regular", cursive;
-            font-weight: 500px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: rgb(255, 0, 170);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin: 5px;
-            margin-bottom: 1px;
-        }
-        button:hover {
-            background-color: rgb(255, 61, 191);
-        }
-        button:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-        }
-        #wap-container {
-            background-color: rgb(255, 255, 255);
-            background-origin: padding-box;
-            display: block;
-            height: auto;
-            width: 650px;
-            padding: 50px;
-            padding-top: 20px;
-            border-radius: 15px;
-            margin: auto;
-        }
-        #pink {
-            background-color: rgb(255, 204, 221);
-            padding-bottom: 20px;
-            margin-top: 30px;
-            border-radius: 15px;
-        }
-        #logo {
-            transition: transform .2s
-        }
-        #logo:hover {
-            transform: scale(1.2);
-        }
-
-        .grayscale {
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-            -ms-filter: grayscale(100%);
-            filter: grayscale(100%);
-        }
-
-    </style>
+    <title id="title_vol">Sparklecare - Everything Sucks Vol </title>
+    <link href="assets/sparkle.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon_sc.ico">
 </head>
 <body>
-    <div style="margin-bottom: 20px; display:block; width:500px; margin-left: auto; margin-right: auto;">
     <a href="index.html"><img id="logo" src="assets/images/header.png" width="100%"></a><br>
-    </div>
-
+    
     <div id="wap-container">
     <h1 id="titlepage">Everything Sucks VOL 1</h1>
     <div id="pink">
     <div id="comic-container">
         <img id="comic-image" src="" alt="Comic Page">
     </div>
-    Dịch thuật + Edit bởi: Kh4ng, Toàn bộ bản quyền thuộc về tác giả Kittycorn.
+    Dịch thuật + Edit bởi: Kh4ng, Toàn bộ bản quyền thuộc về tác giả Kittycorn và ZCP.
     </div>
     <div class="navigation">
         <button id="first-btn">First</button>
@@ -140,7 +56,10 @@
                 const page = pages[index];
                 document.getElementById('comic-image').src = `/${page.image}`;
                 document.getElementById('comic-image').alt = `Comic Page: ${page.id}`;
+
                 document.getElementById('titlepage').innerText = `Everything Sucks Vol ${page.vol} - ${page.id}`
+                document.getElementById('title_vol').innerText = `Sparklecare - Everything Sucks Vol ${page.vol} - ${page.id}`
+
                 window.history.replaceState({}, '', `comic.html?vol=${page.vol}&id=${page.id}`); // Update URL
                 currentPageIndex = index;
                 updateButtons();
