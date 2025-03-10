@@ -66,6 +66,10 @@ button:disabled {
     border-radius: 15px;
 }
 
+#avatar {
+    width: 150px; border-radius: 15px; margin-top:185px;outline: 7px solid rgb(255, 204, 221);
+}
+
 #logodiv {
     margin-bottom: 20px; display:block; width:500px; margin-left: auto; margin-right: auto
 }
@@ -110,7 +114,7 @@ button:disabled {
     }
 
     #avatar {
-        width: 130px; border-radius: 15px; margin-top:105px;outline: 7px solid #72c2f7
+        width: 130px; border-radius: 15px; margin-top:105px;outline: 7px solid rgb(255, 204, 221);
     }
 
     #infobox {
